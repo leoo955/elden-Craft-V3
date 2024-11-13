@@ -49,3 +49,22 @@ body, html {
 #scrollButton:hover {
     background-color: #0056b3;
 }
+/* Styles pour la page de téléchargement */
+.download-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.download-list li {
+    margin-bottom: 15px;
+}
+
+.download-list a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-list a:hover {
+    text-decoration: underline;
+}
