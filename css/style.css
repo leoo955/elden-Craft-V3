@@ -1,3 +1,73 @@
+/* Style pour l'image plein écran */
+.fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: --,- url('../assets/image/Capture\ d\'écran\ 2024-11-10\ 155534.png');
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+/* Masque l'image quand elle n'est plus visible */
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Style pour le contenu de la page */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 100vh;
+}
+
+/* Style pour le bouton de défilement */
+#scrollButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10000; /* Devant le contenu et l'image */
+    transition: background-color 0.3s;
+}
+
+#scrollButton:hover {
+    background-color: #0056b3;
+}
+/* Styles pour la page de téléchargement */
+.download-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.download-list li {
+    margin-bottom: 15px;
+}
+
+.download-list a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-list a:hover {
+    text-decoration: underline;
+}
 /* Style pour la barre de navigation (invisible) */
 .navbar {
     display: flex;
